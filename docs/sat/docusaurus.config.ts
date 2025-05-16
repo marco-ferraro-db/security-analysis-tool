@@ -9,16 +9,20 @@ const config: Config = {
   tagline: ' Security Analysis Tool (SAT) analyzes customer\'s Databricks account and workspace security configurations',
   favicon: 'img/logo.svg',
 
-  url: 'https://databrickslabs.github.io',
+
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/sat/',
+  organizationName: 'marco-ferraro-db', // Your GitHub username
+  projectName: 'security-analysis-tool', // Actual repository name
+  url: 'https://marco-ferraro-db.github.io', // Correct user pages URL
+  baseUrl: '/security-analysis-tool/', // Match repo name
+
   trailingSlash: true,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'databricksindustrysolutions', // Usually your GitHub org/user name.
-  projectName: 'sat', // Usually your repo name.
+  
+
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
@@ -115,3 +119,4 @@ const config: Config = {
 };
 
 export default config;
+
