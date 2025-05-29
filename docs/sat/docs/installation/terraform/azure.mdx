@@ -63,6 +63,7 @@ az login
     "https": "https://example.com"
 }
 ```
+## Run Terraform and SAT Workflows
 
 ### Step 6: Run Terraform Commands
 1. Initialize Terraform:
@@ -86,7 +87,7 @@ terraform apply
 
 ### Step 8: Access the SAT Dashboard
 1. Navigate to the <b>SQL > Dashboard </b> in the left menu from the Databricks workspace.
-2. Select the <b>SAT Dashboard</b>, pic a Workspace from the dropdown, and refresh the dashboard.
+2. Select the <b>SAT Dashboard</b>, choose a Workspace from the dropdown, and refresh the dashboard.
 
 ### Supplemental Documentation
 
@@ -95,7 +96,7 @@ terraform apply
 
 ### Additional Considerations:
 
-* If a pre-existing secret scope named `sat_scope` causes jobs to fail:
+If a pre-existing secret scope named `sat_scope` causes jobs to fail:
 1. Rename the secret scope in `secrets.tf`
 2. Re-run `terraform apply`.
 3. Update the secret scope name in 6 locations (`CMD 4` and `CMD 5`) of `Workspace -> Applications -> SAT-TF/notebooks/Utils/initialize`.
