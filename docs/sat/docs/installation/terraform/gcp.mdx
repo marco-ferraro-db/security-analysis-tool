@@ -9,14 +9,14 @@ import Admonition from '@theme/Admonition';
 ## Setting Up Terraform
 
 <Admonition type="note" title="Note">
-**SAT v0.2.0 or higher** brings full support for Unity Catalog. Now you can pick your catalog instead of hive_metastore. Plus, you get to choose your own schema name.
+**SAT v0.2.0** or higher introduces full support for Unity Catalog. You can now pick your own catalog instead of being limited to the hive_metastore. Additionally, you have the flexibility to choose your own schema name.
 </Admonition>
 
 Step 1: [Install Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 
 Step 2: [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) on local machine
 
-Step 3: Git Clone Repo
+Step 3: Clone the Repository
 
 ```sh
 git clone https://github.com/databricks-industry-solutions/security-analysis-tool.git
@@ -96,4 +96,4 @@ Additional Considerations:
 
 Your jobs may fail if there was a pre-existing secret scope named `sat_scope` when you run `terraform apply`. To remedy this, you will need to change the name of your secret scope in `secrets.tf`, re-run terraform apply, and then navigate to `Workspace -> Applications -> SAT-TF /notebooks/Utils/initialize` and change the secret scope name in  6 places (3 times in CMD 4 and 3 times in CMD 5). You then can re-run your failed jobs.
 
-Congratulations!!! [Please review the setup documentation for the instructions on usage, FAQs and general understanding of SAT setup](../../functionality.mdx)
+Congratulations! 🎉 You are now ready to start using the SAT. Please click [here](../../functionality.mdx) for a detailed description on how to run and use it.
