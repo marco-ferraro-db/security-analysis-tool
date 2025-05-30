@@ -11,7 +11,7 @@ import Admonition from '@theme/Admonition';
 * **SAT v0.2.0** or higher introduces full support for Unity Catalog. You can now pick your own catalog instead of being limited to the hive_metastore. Additionally, you have the flexibility to choose your own schema name.
 
 * **Deployment Requirements**
-  * **AWS/GCP:** At least one SAT setup in a workspace per **account**.
+  * **AWS/GCP:** At least one SAT setup in a workspace per **Databricks account**.
   * **Azure:** At least one SAT setup in a workspace per **subscription**.
   * SAT uses the configured Service Principal to access and analyze configurations by calling account and workspace APIs. Please ensure that the Service Principal is added to **all** workspaces you intend to analyze, following the instructions in the setup guides linked below. If you choose to **exclude** a specific workspace from analysis, simply do not add the Service Principal to it. 
   
