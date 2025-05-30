@@ -17,7 +17,7 @@ To run the appropriate diagnostic notebook:
 * [SAT GCP troubleshooting notebook](https://github.com/databricks-industry-solutions/security-analysis-tool/blob/main/notebooks/diagnosis/sat_diagnosis_gcp.py)
 ---
 
-## Incorrectly configured secrets
+## Misconfigured Secrets
 
 * **Error:**
 
@@ -33,7 +33,7 @@ To run the appropriate diagnostic notebook:
     ```
 ##
 
-## Firewall blocking Databricks accounts console
+## Firewall Blocking Databricks Accounts Console
 
 * **Error:**
 
@@ -77,7 +77,7 @@ To run the appropriate diagnostic notebook:
     If you don’t see a JSON with a clean listing of workspaces, you are likely having a firewall issue that is blocking calls to the accounts console. Please have your infrastructure team add `accounts.cloud.databricks.com` to the allow-list. Ensure that the private IPv4 address from the NAT gateway is added to the IP allow list.
 
 
-## Offline install of libraries in case of no PyPI access
+## Offline Library Install (In case of No PyPI access)
 
 * **Steps:**
 
