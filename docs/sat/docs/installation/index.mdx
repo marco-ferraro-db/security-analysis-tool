@@ -86,3 +86,16 @@ SAT can be deployed using Terraform. If your organization uses Terraform, it is 
 * [SAT GCP Terraform deployment](./terraform/gcp.mdx)
 
 </Admonition>
+
+
+
+## Uninstall SAT
+### Standard Setup
+* Delete the **/Workspace/Applications/SAT** folder
+* Delete the following workflows:
+  * **SAT Initializer Notebook**
+  * **SAT Driver Notebook**
+* Delete the **SAT** Dashboards
+
+### Terraform Setup
+* Run the **terraform destroy** command
